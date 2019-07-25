@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="script.js"></script>
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <div class="container-fluid pb-2 bg-danger">
+            <div class="container px-5">
+                <div class="row p-5">
+                    <div align="center" class="col-xl-4 p-5 bg-info" id="player-0">
+                        <div class="col-12">
+                            <h2 id="winner-0">Player 1</h2>
+                        </div>
+                        <div class="col-12 py-5">
+                            <h1 id="score-0">78</h1>
+                        </div>
+                        <div class="col-12 bg-light" id="currentdisplay-0">
+                            <div class="col-12">Current Score</div>
+                            <div class="col-12" id="current-0">14</div>
+                        </div>
+                    </div>
+                    <div align="center" class="col-xl-4 p-5 bg-warning">
+                        <button type="button" class="btn btn-success mt-2">New Game</button><br>
+                        <img src="dice-1.png" class="w-50" id="diceimg" alt="dice"><br>
+                        <button type="button" class="btn btn-primary">Roll Dice</button><br>
+                        <button type="button" class="btn btn-danger mt-2">Hold Scores</button><br>
+                    </div>
+                    <div align="center" class="col-xl-4 p-5 bg-light" id="player-1">
+                        <div class="col-12">
+                            <h2 id="winner-1">Player 2</h2>
+                        </div>
+                        <div class="col-12 py-5">
+                            <h1 id="score-1">78</h1>
+                        </div>
+                        <div class="col-12 bg-danger text-light" id="currentdisplay-1">
+                            <div class="col-12">Current Score</div>
+                            <div class="col-12" id="current-1">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div align="center" class="container pb-5" id="update">
+                <h3 id="winningScore">Your default winning score is 20</h3>
+                        <label>Enter your winning score</label>
+                        <input type="text" class="form-control w-25" id="newScore">
+                        <button type="submit" class="btn btn-warning mt-3">Update</button>
+            </div>
+        </div>
+    </body>
+</html>
